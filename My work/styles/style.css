@@ -615,3 +615,42 @@ The psuedo attribute :checked in any checkbox + anyclass means do this for the c
     justify-content: center;
   }
 } /*# sourceMappingURL=style.css.map */
+
+
+@media (max-width: 400px){
+ html{
+  font-size: 6px;
+ }
+  .container{
+    justify-content: center;
+    
+  }
+  .header {
+    
+  }
+  .header::after{
+    width: 100vw;
+  }
+  
+
+    .bio__pic-content,.courses__item-almdrasa,.courses__item-instant{
+      max-width: 320px;
+    }
+    
+}
+@media (max-width: 350px){
+  html {
+    font-size: 6px;
+  }
+  .container{
+    justify-content: center;
+  }
+
+  .bio__pic-content{
+    max-width: 250px;
+  }
+  .courses__item-almdrasa,.courses__item-instant{
+    max-width: 250px;
+  }
+
+}
