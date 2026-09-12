@@ -1,0 +1,28 @@
+.skills{
+    row-gap: 5rem;
+}
+.skills__list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column: 1/-1;
+    row-gap: 4rem;
+   
+}
+
+.skills__title{
+    display: inline-block;
+    font-size: var(--font-size-38);
+    font-weight: var(--font-weight-semi-bold);
+    transition: var(--transition-timing);
+    user-select: none;
+     /*user select Determines whether the user can select the text or not */
+}
+.skills__title:hover{
+    color: var(--color-dark-green);
+}
+.exp{
+    display: none;
+    font-size: var(--font-size-20);
+    margin-top: 1rem;
+    user-select: none;
+}

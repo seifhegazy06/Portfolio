@@ -1,0 +1,25 @@
+/*theme*/
+/*
+any variables must be changed inside the root, the html
+*/
+
+html:has(.toggle__checkbox:checked) {
+    
+    --color-background: #272727;
+  --color-text: var(--color-white);
+  --color-box-img: var(--color-green);
+  --color-link-bg: var(--color-green);
+  --color-grey: #232323;
+  --color-input-border: var(--color-white);
+}
+
+
+
+html:has(.toggle__checkbox:checked) .contact__social img{
+    filter: var(--contact-icon-darktheme-color);
+}
+
+
+/*
+The psuedo attribute :checked in any checkbox + anyclass means do this for the class if the box is checked.
+*/

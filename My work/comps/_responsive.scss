@@ -1,0 +1,121 @@
+@media  (max-width: 1000px) {
+    /*conds: 
+    or =',' ,and = and
+    attrs: 
+    orientation; lanscape or portraint (width or height)
+    max or min width
+    max width = device width, meaning for all devices below 1000 px width
+    each device has it's own @media with the cods descriping it
+    
+
+
+    */
+    
+    html {
+        font-size: 8px; /*we use px as a standard, but we use rem for everything in the web so we can control it from html directly*/
+
+    }
+
+
+
+}
+
+
+@media (max-width:800px){
+    .container{
+        row-gap: 8rem;
+    }
+    .section, .courses__list {
+        grid-template-columns: 1fr;
+    }
+
+    .bio__pic-content{
+        
+        justify-items: center;
+        
+    }
+    .bio__pic-content::before{
+        justify-self: center;
+        width:  min(100%, 47.2rem); ;
+    }
+
+
+    .skills__list{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+
+    .courses__item {
+        justify-self: center;
+    }
+
+    .clients__opinion{
+        font-size: var(--font-size-24);
+    }
+
+    .contact{
+        row-gap: 6rem;
+    }
+    .contact__form-content{
+        order: -1;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .bio__pic-content{
+        margin-top: 30px;
+        width: 370px;
+    }
+    .bio__pic-content::before{
+        width: 100%;
+    }
+    .burger-menu{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 0.7rem;
+    }
+    .burger-menu__bar{
+        height: .3rem;
+        width: 4.375rem;
+        background-color: var(--color-text);
+        transition: var(--transition-timing);
+    }
+    .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1){
+        transform: translateY(10px) rotate(40deg);
+    }
+    .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2){
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3){
+        transform: translateY(-7px) rotate(-40deg);
+    }
+
+    .header{
+
+    }
+
+    .header:before{
+
+    }
+
+    .burger-menu__checkbox:checked + .navigation{
+        top: 100%;
+    }
+    .navigation{
+        transition: var(--transition-timing);
+        position: absolute;
+        width: 100vw;
+        background-color: var(--color-background);
+        top: 0;
+        padding: 3rem 0rem ;
+        border-bottom: 0.1rem solid var(--color-text);
+        z-index: -1;
+
+    }
+    .navigation__list{
+        justify-content: center;
+    }
+}

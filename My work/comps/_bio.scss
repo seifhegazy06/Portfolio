@@ -1,0 +1,83 @@
+@import "./mixins";
+
+.bio {
+  @include twoCols(7.4rem);
+}
+
+.bio__heading {
+  font-size: var(--font-size-70);
+  font-weight: var(--font-weight-bold);
+}
+.bio__objective {
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-20);
+  margin: 3rem 0 8rem 0;
+}
+
+.bio__name {
+  font-family: "Great Vibes", cursive;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.bio__linked {
+  color: var(--color-dark-blue);
+}
+.bio__github {
+  color: gray;
+}
+.bio__links {
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+.say-hi-link {
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  padding: 0.7rem 4.7rem;
+  border-radius: 1rem;
+}
+.find-out-link {
+  padding: 0.7rem 0;
+  margin-inline-start: 1.4rem;
+}
+/* defining a new animation for any element*/
+@keyframes jump {
+  0% {
+    transform: translatey(0.5rem);
+  }
+  35% {
+    transform: translatey(-0.5rem);
+  }
+  70% {
+    transform: translatey(0);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+.bio__arrow {
+  display: inline-block;
+  animation: jump 1s infinite alternate ease-in-out;
+}
+
+.bio__pic-content {
+  display: inline-block;
+  position: relative;
+  justify-self: end;
+}
+.bio__pic-content::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-box-img);
+  inset: 0;
+  z-index: -1;
+  border-radius: 1.8rem;
+  width: 43rem;
+  height: 80%;
+  align-self: end;
+}
+.bio__pic {
+  width: min(100%, 47.2rem);
+  display: block;
+}

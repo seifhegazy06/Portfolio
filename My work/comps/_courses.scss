@@ -1,0 +1,25 @@
+.courses{
+    row-gap: 5rem;
+}
+.courses__list{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7.4rem;
+    row-gap: 7rem;
+
+}
+.courses__item{
+    align-self: center;
+    
+}
+.courses__data{
+    line-height: 1.5;
+    font-size: var(--font-size-20);
+    
+}
+.courses__item-almdrasa,.courses__item-instant{
+    max-width: 100%;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 .5rem rgba(0, 0,0, .2);
+}

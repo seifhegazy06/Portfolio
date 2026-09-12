@@ -1,0 +1,10 @@
+.projects{
+    display: none;
+    row-gap: 5rem;
+}
+.projects__list{
+    grid: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column: 1/-1;
+}
