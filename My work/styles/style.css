@@ -58,7 +58,9 @@ button {
   border: none;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -76,7 +78,9 @@ body {
   border: 0;
 }
 
-body, header, .container {
+body,
+header,
+.container {
   transition: var(--transition-timing);
 }
 
@@ -132,6 +136,7 @@ body, header, .container {
   height: 100%;
   z-index: -1;
   justify-self: center;
+  transition: var(--transition-timing);
 }
 
 .header {
@@ -150,6 +155,7 @@ body, header, .container {
   height: 100%;
   background-color: var(--color-background);
   z-index: -1;
+  transition: var(--transition-timing);
 }
 
 .header {
@@ -239,7 +245,7 @@ body, header, .container {
 .bio {
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 7.4rem;
-       column-gap: 7.4rem;
+  column-gap: 7.4rem;
   row-gap: 0;
 }
 
@@ -279,6 +285,7 @@ body, header, .container {
   color: var(--color-white);
   padding: 0.7rem 4.7rem;
   border-radius: 1rem;
+  transition: var(--transition-timing);
 }
 
 .find-out-link {
@@ -322,6 +329,7 @@ body, header, .container {
   width: 43rem;
   height: 80%;
   align-self: end;
+  transition: var(--transition-timing);
 }
 
 .bio__pic {
@@ -346,8 +354,8 @@ body, header, .container {
   font-weight: var(--font-weight-semi-bold);
   transition: var(--transition-timing);
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   /*user select Determines whether the user can select the text or not */
 }
 
@@ -360,8 +368,8 @@ body, header, .container {
   font-size: var(--font-size-20);
   margin-top: 1rem;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .courses {
@@ -373,7 +381,7 @@ body, header, .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 7.4rem;
-       column-gap: 7.4rem;
+  column-gap: 7.4rem;
   row-gap: 7rem;
 }
 
@@ -386,10 +394,21 @@ body, header, .container {
   font-size: var(--font-size-20);
 }
 
-.courses__item-almdrasa, .courses__item-instant {
+.courses__item-almdrasa,
+.courses__item-instant {
   max-width: 100%;
   border-radius: 1.5rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+.projects{
+    display: none;
+    row-gap: 5rem;
+}
+.projects__list{
+    grid: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column: 1/-1;
 }
 
 .clients__opinions {
@@ -413,7 +432,7 @@ body, header, .container {
 .contact {
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 20rem;
-       column-gap: 20rem;
+  column-gap: 20rem;
   row-gap: 0;
   align-items: center;
 }
@@ -460,7 +479,8 @@ body, header, .container {
   margin-top: 4rem;
 }
 
-.contact__button, [type=submit] {
+.contact__button,
+[type="submit"] {
   background-color: var(--color-link-bg);
   color: var(--color-white);
   padding: 1.7rem 1.8rem;
@@ -519,7 +539,8 @@ The psuedo attribute :checked in any checkbox + anyclass means do this for the c
   .container {
     row-gap: 8rem;
   }
-  .section, .courses__list {
+  .section,
+  .courses__list {
     grid-template-columns: 1fr;
   }
   .bio__pic-content {
@@ -532,7 +553,7 @@ The psuedo attribute :checked in any checkbox + anyclass means do this for the c
   .skills__list {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 2rem;
-         column-gap: 2rem;
+    column-gap: 2rem;
   }
   .courses__item {
     justify-self: center;
@@ -593,4 +614,4 @@ The psuedo attribute :checked in any checkbox + anyclass means do this for the c
   .navigation__list {
     justify-content: center;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
